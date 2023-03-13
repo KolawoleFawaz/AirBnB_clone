@@ -1,17 +1,20 @@
 #!/usr/bin/python3
-"""
-Defines the Review class.
+"""The `review` module.
+It defines one class, `Review(),
+which sub-classes the `BaseModel()` class.`
 """
 from models.base_model import BaseModel
 
 
 class Review(BaseModel):
-    """Represent a review
+    """A review of a place/house.
+    It represents a review posted by the users
+    of the application about a place/house.
     Attributes:
-        place_id (str): The Place id
-        user_id (str): The User id
-        text (str): The text of the review
+        text
+        user_id
+        place_id
     """
-    place_id = ""
-    user_id = ""
     text = ""
+    user_id = ""
+    place_id = ""
